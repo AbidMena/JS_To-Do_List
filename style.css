@@ -1,0 +1,215 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: hsl(0, 0%, 15%);
+    font-family: sans-serif;
+}
+
+header {
+    height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5em;
+    background-color: hsl(222, 45%, 33%);
+}
+
+.card_label {
+    display: block;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: rgb(185, 187, 189);
+}
+
+.form_signup {
+    width: 80%;
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input_type-style {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 33px;
+}
+
+.fieldset_style {
+    display: block;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    box-shadow: 3px 3px 3px rgb(74, 73, 73);
+    width: 40%;
+}
+
+.legend_text {
+    font-size: 25px;
+    font-family: sans-serif;
+    color: rgb(81, 81, 233);
+    margin: 0; 
+    padding-bottom: 2px; 
+}
+
+.fieldset_items {
+    margin-top: 5px;
+    color: black;
+}
+
+.submit_btn {
+    background-color: blue;
+    width: 50%;
+    height: 35px;
+    border-radius: 0.4rem;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: aliceblue;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.highlight_tasks {
+    width: 20% !important;
+}
+
+.remove_Completed-task {
+    width: 20% !important;
+    background-color: red;
+}
+
+.completed_btn{
+    background-color: rgb(108, 138, 64);
+    border-radius: 0.4rem;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: aliceblue;
+    cursor: pointer;
+    width: 90%;
+    height: 30px;
+}
+
+.submit_btn:hover, .completed_btn:hover {
+    background-color: rgb(33, 59, 154);
+    transition: 0.5s;
+} 
+
+.remove_Completed-task:hover {
+    background-color: rgb(61, 63, 72);
+    transition: 0.5s;
+}
+
+.submit_btn:active, .completed_btn:active {
+    background-color: rgb(234, 239, 250);
+    color: black;
+    transition: 0.2s;
+} 
+
+main {
+    display: grid;
+    padding: 2em;
+}
+
+.btns_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+.column {
+    display: grid;
+    gap: 0.5em;
+}
+
+.columns {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, min-content);
+}
+
+.card {
+    padding: 1em;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 0.4rem;
+}
+
+.card_title {
+    margin: 0;
+    font-size: 1.2rem;
+    color: aliceblue;
+}
+
+/*It align the title and the bar vertically put them on a specific point of the car */
+.card_items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 0;
+    color: rgb(185, 187, 189);
+}
+
+.completed_task-card {
+    background-color: hsl(0, 0%, 98%);
+    color: black;
+    border-radius: 0.4rem;
+    padding: 1em;
+}
+
+.completed_task-card-title{
+    color: black;
+}
+
+.completed_task-card-items{
+    color: black;
+}
+
+.highlight_task-card-title{
+    color: #3ac552;
+}
+
+.highlight_task-card-items{
+    color: #3ac552;
+}
+
+@media screen and (max-width: 915px){
+    .fieldset_style {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 1015px){
+    .submit_btn {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .fieldset_style {
+        width: 71%;
+    }
+    .submit_btn {
+        font-size: 10px;
+    }
+    .highlight_tasks {
+        width: 50% !important;
+    }
+    .remove_Completed-task {
+        width: 50% !important;
+    }
+   
+}
+
+@media screen and (max-width: 440px){
+    .fieldset_style {
+        width: 95%;
+    }
+
+    .submit_btn {
+        font-size: 12px;
+    }
+}
+
+
